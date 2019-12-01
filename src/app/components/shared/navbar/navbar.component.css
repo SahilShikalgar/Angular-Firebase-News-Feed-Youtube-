@@ -1,0 +1,12 @@
+.nav-color {
+    background: #003366;
+}
+
+.navbar-brand > img {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.header-description {
+    font-size: 0.9rem;
+}

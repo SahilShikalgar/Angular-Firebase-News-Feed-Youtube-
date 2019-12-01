@@ -1,0 +1,38 @@
+.brand_logo_container {
+    position: absolute;
+    top: -3.5rem;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand_logo {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.bg-dark, .btn-dark {
+    background: #003366 !important;
+}
+
+.btn-dark:active {
+    background: #003366 !important;
+}
+
+.margin-form {
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+
+@media only screen and (max-width: 768px) {
+    .brand_logo_container {
+        display: none;
+    }
+
+    .margin-form {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+}
