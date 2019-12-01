@@ -11,6 +11,11 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NewsElementsContainerComponent } from './components/news-elements-container/news-elements-container.component';
+import { NewsElementComponent } from './components/news-elements-container/news-element/news-element.component';
+import { NewsFilterComponent } from './components/news-filter/news-filter.component';
+import { ViewNewsComponent } from './components/view-news/view-news.component';
 
 const appConfig = {
   firebaseConfig: {
@@ -30,14 +35,19 @@ const appConfig = {
     NavbarComponent,
     FooterComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    NewsElementsContainerComponent,
+    NewsElementComponent,
+    NewsFilterComponent,
+    ViewNewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(appConfig.firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

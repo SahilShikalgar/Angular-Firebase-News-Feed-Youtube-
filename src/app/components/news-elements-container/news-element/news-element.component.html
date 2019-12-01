@@ -1,0 +1,18 @@
+<div class="card card-body mt-1 mb1">
+  <div class="row">
+    <div class="col-xl-2">
+      <img src={{news.urlToImage}} alt="INF" class="rounded-circle" />
+    </div>
+    <div class="col-xl-10">
+      <h6>{{news.title}}</h6>
+      <small>{{news.publishedAt}}</small>
+      <p>{{news.description}}</p>
+      <button class="btn-dark p-1" (click)="onContinueReading()" (mouseenter)="showNgContent()" (mouseleave)="showNgContent()">Continue Reading</button>
+
+      <div [hidden]="hide">
+        <small class="ml-1 display-block text-primary author-data">Author: {{ news.author ? news.author : 'Unknown' }}</small>
+        <ng-content select=".author-data"></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

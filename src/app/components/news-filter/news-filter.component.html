@@ -1,0 +1,11 @@
+<div class="mt-2 mb 5">
+  <div class="select-category-div">
+    <h5 class="select-channel-label">SELECT CHANNEL</h5>
+    <select class="form-control" (change)="onChannelChanged($event)">
+      <option *ngFor="let channel of newsChannels" value={{channel.id}}>{{ channel.name }}</option>
+    </select>
+  </div>
+  <button *ngIf="auth.isUserAdmin" class="mt-4 form-control text-white" (click)="onAddNews()">
+    Add News
+  </button>
+</div>

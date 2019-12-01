@@ -1,0 +1,9 @@
+img {
+    height: 9rem;
+    width: 9rem;
+}
+
+button {
+    font-size: 0.9em;
+    padding: 0.35em !important;
+}

@@ -1,0 +1,21 @@
+<div class="row mt5">
+  <div class="col-md-12 mb-5">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="card card-body mb-1">
+          <em class="fa fa-arrow-circle-left fa-2x float-left" (click)="backToDashboard()"></em>
+          <div class="text-center mb-4">
+            <img src={{news.urlToImage}} alt="INF" />
+          </div>
+          <h6>{{news.title}}</h6>
+          <small>{{ news.publishedAt }}</small>
+          <small>{{ news.author }}</small>
+          <p>{{news.description}}</p>
+        </div>
+      </div>
+      <div class="col-md-5">
+        Comments Section
+      </div>
+    </div>
+  </div>
+</div>

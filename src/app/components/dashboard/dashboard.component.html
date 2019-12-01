@@ -1,3 +1,12 @@
-<p>
-  dashboard works!
-</p>
+<div class="row">
+  <div class="col-md-9 mb-5">
+    <app-news-elements-container
+      [newsData]="newsData"
+      *ngIf="newsData.length > 0"
+    >
+    </app-news-elements-container>
+  </div>
+  <div class="col-md-3">
+    <app-news-filter></app-news-filter>
+  </div>
+</div>
